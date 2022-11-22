@@ -1,0 +1,83 @@
+# pwd - как узнать путь до текущей директории
+
+# создать 2 папки test 1 , test 2
+# в папке  test1 создать папку hello
+# в папке test1 создать файлы test1.py test.txt
+
+# mkdir test{1,2}
+# mkdir hello/hello
+# touch test1/test.{py,txt}
+# touch test1/hello/test.py
+
+# создайте переменную string со значением hello world и переменную num с любым целым числом
+# string = "hello world"
+# num = 10
+
+# выведите в терминал string в верхнем регистре
+# print(string.upper())
+
+
+# запросите у пользователя число, выведите в терминал остаток от деления num на это число
+# num2 = int(input("Введите число:"))
+# a)  print(num % num2)
+
+# b)  print(num2 % 2 == 0)
+
+# if  num2 % 2 == 0
+#     print("четное")
+# else: 
+#    print("не четное")
+
+# print(string[2])
+
+# text = 'Maker\'s Bootcamp\nДобро пожаловать в "Makers.kg"\nЗдесь исполняются мечты"
+
+# test = "Maker's Bootcamp\nДобро пожаловать в \"Makers.kg\"\nЗдесь исполняются мечты"
+
+# print(len(text))
+
+
+# print(text[17:47])
+
+# ind1 = text.index("\n")
+# ind2 = text.rindex("\n")
+# print(text[ind1 + 1:ind2])
+
+# splitted = text.split("n")
+# print(splitted[1])
+
+
+db = [
+    ["Aselya", 15, "Student"],
+    ['Aizhan', 20, 'Mentor'],
+    ['Nastya', 9, ' Student'],
+    ['Ali', 36, "Mentor"]
+    ]
+for element in db:
+    if db[0][1] > 15:
+        print(f'"Hello, {db[0][0]}, you are Mentor"')
+    elif db[1] [1] > 15:
+        print(f'"Hello, {db[1][0]}, you are Mentor"')
+    elif db[2] [1] > 15:
+        print(f'"Hello, {db[2][0]}, you are Mentor"')
+    elif db[3] [1] > 15:
+        print(f'"Hello, {db[3][0]}, you are Mentor"')
+else:
+    print(f'{db[0]}, you are young')
+
+for person in db:
+    name = person[0]
+    age = person[1]
+    prof = person[2]
+    if age > 15:
+        print(f'Hello, {name}, you are {prof}')
+    else:
+        print(f'{name}, you are young')
+
+# или надо name, age, prof = person
+
+
+a, b = [2,3]
+# a = 2
+# b = 3
+#ValueError

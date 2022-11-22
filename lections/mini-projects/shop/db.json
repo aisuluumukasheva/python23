@@ -1,0 +1,1 @@
+{"users": [{"id": 1, "username": "hello", "password": "12345", "is_active": true, "is_staff": false}], "products": [{"id": 302, "title": "gg", "price": 12.0}, {"id": 494, "title": "dd", "price": 12.0}, {"id": 800, "title": "gg", "price": 90.0}]}
