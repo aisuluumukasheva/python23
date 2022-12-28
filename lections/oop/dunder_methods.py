@@ -66,18 +66,28 @@ dict_ = {'a':1,'b':2}
 dict_['a']
 dict_.__getitem__('a')
 
-# __iter__ - вызывается, когда мы итерируем объект
 
+# __iter__ - вызывается, когда мы итерируем обьект
 class A:
     def __iter__(self):
         for i in range(10):
-            print('iter method')
+            print("iter method")
             yield i
 
-for in in A():
+for i in A():
     print(i)
 
+def generator():
+    for i in range(10):
+        yield i
 
+gen = generator()
+
+while True:
+    try:
+        print(next(gen))
+    except StopIteration:
+        break
 
 
 
